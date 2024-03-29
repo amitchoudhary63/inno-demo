@@ -1,0 +1,20 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let item of data">
+    <div class="card mb-3">
+      <table>
+        <tr>
+          <td>
+            <img class="card-img" [src]="item.imageSrc || 'https://picsum.photos/200/300'" alt="Card image">
+          </td>
+          <td>
+            <div class="card-body">
+              <h5 class="card-title">{{ item.title }}</h5>
+              <p class="card-text">{{ item.body }}</p>
+              <button class="btn btn-primary">Read More</button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
